@@ -101,6 +101,8 @@ section{padding:var(--space-12) 0}
 .rail{display:grid;grid-template-columns:240px minmax(0,1fr);gap:var(--space-12)}
 .rail__side{position:sticky;top:calc(var(--nav-height) + var(--space-6));align-self:start}
 .split{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:var(--space-12)}
+.split--aside{grid-template-columns:minmax(0,1fr) 340px}
+.rail--wide{grid-template-columns:260px minmax(0,1fr)}
 .stack{display:flex;flex-direction:column}
 .gap-3{gap:var(--space-3)}.gap-5{gap:var(--space-5)}.gap-6{gap:var(--space-6)}
 .between{display:flex;align-items:flex-end;justify-content:space-between;gap:var(--space-9);flex-wrap:wrap}
@@ -163,7 +165,7 @@ section{padding:var(--space-12) 0}
 
 @media (max-width:1000px){
   .h-hero{font-size:52px}.h-display{font-size:42px}.h1{font-size:34px}.h2{font-size:28px}
-  .rail,.split{grid-template-columns:1fr;gap:var(--space-8)}
+  .rail,.split,.split--aside,.rail--wide{grid-template-columns:1fr;gap:var(--space-8)}
   .rail__side{position:static}
   .row-3,.row-4{grid-template-columns:repeat(2,minmax(0,1fr))}
   .nav__links{display:none}
