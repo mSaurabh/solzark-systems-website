@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Capabilities — Solzark Systems</title>
+<meta name="description" content="Data engineering, security and access control, QA automation, cloud and AI, systems modernization and technology strategy.">
+<link rel="icon" type="image/svg+xml" href="../assets/logos/icon-only-symbol.svg">
+<link rel="icon" type="image/x-icon" href="../assets/logos/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="../index.html" aria-label="Solzark Systems — home">
+      <img src="../assets/logos/icon-only-symbol.svg" alt="" width="30" height="30">
+      <span class="wordmark"><b>SOLZARK</b><span>SYSTEMS</span></span>
+    </a>
+    <ul class="nav__links">
+      <li><a href="../capabilities/index.html" aria-current="page">Capabilities</a></li>
+      <li><a href="../engagements/index.html">Engagements</a></li>
+      <li><a href="../about/index.html">About</a></li>
+      <li><a class="btn btn--primary btn--sm" href="../index.html#contact">Start a conversation</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
+  </div>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="../capabilities/index.html">Capabilities</a>
+    <a href="../engagements/index.html">Engagements</a>
+    <a href="../about/index.html">About</a>
+    <a href="../index.html#contact">Start a conversation</a>
+  </div>
+</header>
+<section class="band" style="padding:var(--space-11) 0 var(--space-10)">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container on-dark">
+    <div class="eyebrow eyebrow--gold mb-5">Capabilities</div>
+    <h1 class="h-display" style="max-width:20ch">Specialized where precision matters</h1>
+    <p class="lead mt-6" style="max-width:54ch">Six practices, delivered hands-on in energy, utilities, healthcare, financial services and SaaS. Each one lists what you get and where the work usually starts.</p>
+    <nav class="chips">
+      <a href="#data">01 Data engineering</a>
+      <a href="#security">02 Security</a>
+      <a href="#qa">03 QA automation</a>
+      <a href="#cloud">04 Cloud and AI</a>
+      <a href="#modernization">05 Modernization</a>
+      <a href="#strategy">06 Strategy</a>
+    </nav>
+  </div>
+</section>
+
+<section class="" id="data">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">01</div>
+      <div class="rule rule--violet rule--sm"></div>
+      <div class="tags"><span class="tag">SQL Server</span><span class="tag">Azure</span><span class="tag">ETL</span><span class="tag">Data modeling</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">Data engineering and architecture</h2>
+      <p class="body-lg mb-7 measure">When analysts rebuild the same extract by hand every month, the problem is rarely the report. We design analytical data stores, migrate legacy operational stores, and put an abstraction layer between reporting and the source schema so a schema change stops breaking dashboards.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>A data model documented against the reporting the business actually runs</li><li>Pipelines with monitoring and a runbook your team can operate</li><li>A migration plan with dates, sequenced so operations keep running</li></ul>
+        </div>
+        <div class="card card--sunken">
+  <h3 class="h5 mb-4">Where it starts</h3>
+  <p class="mb-4">A two-week assessment of the current stores, the reports depending on them, and the changes that keep breaking. You get the findings whether or not you continue.</p>
+  <a href="../engagements/index.html#utility" style="font-weight:500">See a utility data platform engagement</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sunken" id="security">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">02</div>
+      <div class="rule rule--violet rule--sm"></div>
+      <div class="tags"><span class="tag">RBAC</span><span class="tag">Row-level security</span><span class="tag">AD integration</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">Security and access control</h2>
+      <p class="body-lg mb-7 measure">Access models fail in one of two directions: too open to pass an audit, or so restrictive that people work around them. We design RBAC schemas and row-level security against the Active Directory groups you already maintain, and we apply confidentiality, integrity and availability as design constraints rather than a checklist at the end.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>A documented role and permission model mapped to existing directory groups</li><li>Row-level security and schema-per-group tenancy where the data requires it</li><li>Evidence an auditor can read, produced during the work rather than after</li></ul>
+        </div>
+        <div class="card card--accent">
+  <div class="tradeoff-label">Known risk</div>
+  <p>Tightening access surfaces the accounts that were quietly over-privileged. Expect a short window of access requests after cutover, and plan someone to own them.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="" id="qa">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">03</div>
+      <div class="rule rule--gold rule--sm"></div>
+      <div class="tags"><span class="tag">SerenityJS</span><span class="tag">Cucumber</span><span class="tag">Jenkins</span><span class="tag">API testing</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">QA and test automation</h2>
+      <p class="body-lg mb-7 measure">A suite nobody trusts costs more than no suite at all, because someone still spends their week triaging false failures. We build end-to-end frameworks on SerenityJS using the screenplay pattern, wired into Jenkins for nightly runs with alerting and reporting a product owner can act on.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>A framework your engineers extend without calling us</li><li>Nightly execution in CI with automated failure alerting</li><li>Dashboards that report coverage in terms the business uses</li></ul>
+        </div>
+        <div class="card card--sunken">
+  <h3 class="h5 mb-4">Where it starts</h3>
+  <p class="mb-4">A proof of concept on your highest-risk flow, reviewable before you commit to the full framework. One recent build reached 400+ automated tests in four months.</p>
+  <a href="../engagements/index.html#saas" style="font-weight:500">See the QA rebuild engagement</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sunken" id="cloud">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">04</div>
+      <div class="rule rule--gold rule--sm"></div>
+      <div class="tags"><span class="tag">Lambda</span><span class="tag">Bedrock</span><span class="tag">OpenSearch</span><span class="tag">CloudFormation</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">Cloud and AI integration</h2>
+      <p class="body-lg mb-7 measure">We build AWS-native services on Lambda, Bedrock and OpenSearch Serverless, defined in CloudFormation and released through the same pipeline as the rest of your platform. AI features are scoped against a measurable retrieval or accuracy target, not a demo. AWS AI Practitioner certified.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>Infrastructure as code, so the environment is reproducible</li><li>Search or inference wired into your existing CI/CD</li><li>Cost and latency figures measured before rollout, not estimated</li></ul>
+        </div>
+        <div class="card card--accent">
+  <div class="tradeoff-label">Known risk</div>
+  <p>Managed AI services move fast, and a model or endpoint you depend on can change under you. We pin versions and name the review interval in the handoff.</p>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="" id="modernization">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">05</div>
+      <div class="rule rule--mark rule--sm"></div>
+      <div class="tags"><span class="tag">Legacy migration</span><span class="tag">SQL optimization</span><span class="tag">Process automation</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">Systems modernization</h2>
+      <p class="body-lg mb-7 measure">Modernization goes wrong when it becomes a rewrite nobody scheduled. We assess what you have, sequence the work so operations keep running, and automate the manual steps that cost your team the most hours. One onboarding automation cut customer setup time by 90%.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>An assessment that names what to keep, not only what to replace</li><li>A migration sequence with rollback at each step</li><li>Automation documented and handed to the team that runs it</li></ul>
+        </div>
+        <div class="card card--sunken">
+  <h3 class="h5 mb-4">Where it starts</h3>
+  <p class="mb-4">A legacy assessment scoped to one system and the processes around it, ending in a roadmap you can fund in stages.</p>
+  <a href="../engagements/index.html#onboarding" style="font-weight:500">See the onboarding automation engagement</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="sunken" id="strategy">
+  <div class="container rail">
+    <div class="rail__side">
+      <div class="mono mb-4" style="color:var(--brand-primary)">06</div>
+      <div class="rule rule--violet rule--sm"></div>
+      <div class="tags"><span class="tag">Roadmapping</span><span class="tag">Stakeholder alignment</span><span class="tag">Agile / SAFe</span></div>
+    </div>
+    <div>
+      <h2 class="h2 mb-5" style="max-width:26ch">Technology strategy and leadership</h2>
+      <p class="body-lg mb-7 measure">Programs stall in the gap between what leadership decided and what engineering understood. We run weekly executive sessions and cross-functional roadmap work, and we translate in both directions — including when the honest answer is that a date will not hold.</p>
+      <div class="row-2">
+        <div class="card">
+          <h3 class="h5 mb-4">What you get</h3>
+          <ul class="bullets"><li>A roadmap with named owners, dependencies and risks</li><li>Decision records, so a choice made in March is still explainable in October</li><li>Reporting that works for engineers and for the executive committee</li></ul>
+        </div>
+        <div class="card card--sunken">
+  <h3 class="h5 mb-4">How we fit</h3>
+  <p class="mb-4">We work inside your framework, whether that is SAFe, Scrum or no framework at all. We have delivered in weekly sprint cycles reporting to a CEO and in exploratory work with no ceremony.</p>
+  <a href="../about/index.html" style="font-weight:500">Who you work with</a>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="band">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container on-dark between">
+    <div>
+      <div class="eyebrow eyebrow--gold mb-5">Contact</div>
+      <h2 class="h1 mb-5" style="max-width:20ch">Send the constraint you are stuck on</h2>
+      <p class="lead" style="max-width:46ch">A founder reads every message. We reply within two business days, and we will tell you if this is not work we should take.</p>
+    </div>
+    <div style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+      <a class="btn btn--primary btn--lg" href="../index.html#contact">Start a conversation</a>
+      <a class="btn btn--on-dark btn--lg" href="../engagements/index.html">Read the engagements</a>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="caption" style="color:var(--text-inverse-muted)">© 2026 Solzark Systems LLC · Houston, Texas</span>
+    <nav>
+      <a href="../about/index.html">About</a>
+      <a href="../capabilities/index.html">Capabilities</a>
+      <a href="../engagements/index.html">Engagements</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </div>
+</footer>
+<script src="../js/main.js"></script>
+</body>
+</html>

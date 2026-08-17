@@ -1,588 +1,227 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Solzark Systems LLC — Partnering to build what's next.</title>
-  <meta name="description" content="Houston-based IT consulting firm specializing in data engineering, cloud architecture, security frameworks, and QA automation for enterprises." />
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/svg+xml" href="assets/logos/icon-only-symbol.svg" />
-  <link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico" />
-
-  <!-- Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
-
-  <!-- Stylesheet -->
-  <link rel="stylesheet" href="css/style.css" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Solzark Systems LLC — Partnering to build what's next.</title>
+<meta name="description" content="Houston-based IT consulting: data engineering, security architecture, test automation and systems modernization for utilities and other regulated environments.">
+<link rel="icon" type="image/svg+xml" href="assets/logos/icon-only-symbol.svg">
+<link rel="icon" type="image/x-icon" href="assets/logos/favicon.ico">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-<!-- ═══════════════════════════════════════════════════════════
-     NAVIGATION
-     ═══════════════════════════════════════════════════════════ -->
-<nav id="nav" role="navigation" aria-label="Main navigation">
-  <div class="container nav-inner">
-
-    <a href="#home" class="nav-logo" aria-label="Solzark Systems — home">
-      <!-- Real logo from Google Drive: FullLogo_Transparent.svg -->
-      <img src="assets/logos/FullLogo_Transparent.svg"
-           alt="Solzark Systems LLC"
-           class="nav-logo-img"
-           width="220"
-           height="64" />
+<header class="nav">
+  <div class="container nav__inner">
+    <a class="nav__logo" href="index.html" aria-label="Solzark Systems — home">
+      <img src="assets/logos/icon-only-symbol.svg" alt="" width="30" height="30">
+      <span class="wordmark"><b>SOLZARK</b><span>SYSTEMS</span></span>
     </a>
-
-    <ul class="nav-links" role="list">
-      <li><a href="#about">About</a></li>
-      <li><a href="#services">Services</a></li>
-      <li><a href="#process">Process</a></li>
-      <li><a href="#contact">Contact</a></li>
+    <ul class="nav__links">
+      <li><a href="capabilities/index.html">Capabilities</a></li>
+      <li><a href="engagements/index.html">Engagements</a></li>
+      <li><a href="about/index.html">About</a></li>
+      <li><a class="btn btn--primary btn--sm" href="#contact">Start a conversation</a></li>
     </ul>
-
-    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span><span></span></button>
   </div>
-
-  <div class="mobile-nav" id="mobileNav" role="menu">
-    <a href="#about"   role="menuitem">About</a>
-    <a href="#services" role="menuitem">Services</a>
-    <a href="#process" role="menuitem">Process</a>
-    <a href="#contact" role="menuitem">Contact</a>
+  <div class="mobile-nav" id="mobileNav">
+    <a href="capabilities/index.html">Capabilities</a>
+    <a href="engagements/index.html">Engagements</a>
+    <a href="about/index.html">About</a>
+    <a href="#contact">Start a conversation</a>
   </div>
-</nav>
-
-
-<!-- ═══════════════════════════════════════════════════════════
-     HERO
-     ═══════════════════════════════════════════════════════════ -->
-<section id="home" aria-label="Hero">
-  <div class="hero-bg">
-    <div class="hero-node hero-node-1"></div>
-    <div class="hero-node hero-node-2"></div>
-    <div class="hero-node hero-node-3"></div>
-    <div class="hero-node hero-node-4"></div>
-    <div class="hero-node hero-node-5"></div>
-    <div class="hero-node hero-node-6"></div>
-    <div class="hero-node hero-node-7"></div>
-  </div>
-  <div class="container">
-    <div class="hero-content">
-      <span class="hero-eyebrow">Houston, Texas · IT Consulting</span>
-      <h1 class="hero-headline">
-        Partnering to build<br>
-        <span class="accent">what's next.</span>
-      </h1>
-      <p class="hero-sub">IT consulting for enterprises that can't afford to get it wrong.</p>
-      <div class="hero-ctas">
-        <a href="#contact"  class="btn btn-primary">Work With Us</a>
-        <a href="#services" class="btn btn-secondary">See Our Services</a>
+</header>
+<section class="band" style="padding:var(--space-13) 0 var(--space-11)">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container on-dark">
+    <div class="split" style="align-items:end">
+      <div>
+        <div class="eyebrow eyebrow--gold mb-6">Houston, Texas · IT consulting</div>
+        <h1 class="h-hero" style="max-width:16ch">Partnering to build what's next.</h1>
+        <p class="lead mt-7" style="max-width:46ch">We architect analytical data systems, secure access frameworks and test automation for utilities and other regulated environments. You work directly with the engineer doing the work.</p>
+        <div class="mt-8" style="display:flex;gap:var(--space-3);flex-wrap:wrap">
+          <a class="btn btn--primary btn--lg" href="#contact">Start a conversation</a>
+          <a class="btn btn--on-dark btn--lg" href="engagements/index.html">Read an engagement write-up</a>
+        </div>
+      </div>
+      <div class="stack gap-6" style="border-left:1px solid var(--border-inverse);padding-left:var(--space-7)">
+        <div><div class="stat__num stat__num--lg stat__num--gold">15 yrs</div><div class="stat__label">Delivering in energy, utilities, healthcare and financial services</div></div>
+        <div class="divider"></div>
+        <div><div class="stat__num stat__num--lg stat__num--gold">$3.1M+</div><div class="stat__label">Client revenue contributed across engagements</div></div>
+        <div class="divider"></div>
+        <div><div class="stat__num stat__num--lg stat__num--gold">400+</div><div class="stat__label">Automated tests in a framework built for a SaaS platform in four months</div></div>
+        <div class="divider"></div>
+        <div><div class="stat__num stat__num--lg stat__num--gold">2024</div><div class="stat__label">Innovation award in a regulated utility environment</div></div>
       </div>
     </div>
   </div>
 </section>
 
-
-<!-- ═══════════════════════════════════════════════════════════
-     ABOUT
-     ═══════════════════════════════════════════════════════════ -->
-<section id="about" aria-label="About Solzark Systems">
-  <div class="container">
-    <div class="about-grid">
-
-      <div class="about-text">
-        <span class="section-label fade-up">About Us</span>
-        <h2 class="fade-up stagger-1">Enterprise experience.<br>Boutique agility.</h2>
-        <div class="gold-line fade-up stagger-2"></div>
-
-        <p class="about-body fade-up stagger-2">
-          Solzark Systems LLC is a Houston-based IT consulting firm founded by Saurabh Mankar — a strategic technology
-          leader with 15+ years of experience delivering enterprise solutions across the energy, utilities, healthcare,
-          and financial services industries.
-        </p>
-        <p class="about-body fade-up stagger-3">
-          From architecting analytical data stores for regulated utilities to deploying AI-powered search infrastructure
-          for SaaS platforms, our work spans the full delivery lifecycle — from roadmap and requirements through build,
-          QA, and stakeholder handoff. We've led multi-million-dollar programs, managed distributed engineering teams
-          across continents, and driven innovation that earned formal industry recognition.
-        </p>
-        <p class="about-body fade-up stagger-4">
-          We partner with organizations to architect analytical data systems, design secure access frameworks,
-          build quality assurance automation, and drive technology strategy from roadmap to reality.
-        </p>
-        <p class="about-body callout fade-up stagger-5">
-          Our clients don't hire us for reports. They hire us to get things done.
-        </p>
-
-        <div class="stats-row">
-          <div class="stat-card fade-up stagger-2">
-            <span class="stat-num">15+</span>
-            <span class="stat-label">Years experience</span>
-          </div>
-          <div class="stat-card fade-up stagger-3">
-            <span class="stat-num">$3.1M+</span>
-            <span class="stat-label">Revenue contributed</span>
-          </div>
-          <div class="stat-card fade-up stagger-4">
-            <span class="stat-num">2024</span>
-            <span class="stat-label">Innovation Award</span>
-          </div>
-          <div class="stat-card fade-up stagger-5">
-            <span class="stat-num">F500</span>
-            <span class="stat-label">Clients served</span>
-          </div>
-        </div>
-      </div>
-
-      <div class="about-visual fade-up stagger-3" aria-hidden="true">
-        <!-- Abstract network illustration -->
-        <svg class="about-network" viewBox="0 0 420 380" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <defs>
-            <radialGradient id="glow1" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="#461D7C" stop-opacity="0.3"/>
-              <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0"/>
-            </radialGradient>
-            <radialGradient id="glow2" cx="50%" cy="50%" r="50%">
-              <stop offset="0%"   stop-color="#FDD023" stop-opacity="0.15"/>
-              <stop offset="100%" stop-color="#0f0f0f" stop-opacity="0"/>
-            </radialGradient>
-          </defs>
-          <ellipse cx="160" cy="180" rx="140" ry="130" fill="url(#glow1)"/>
-          <ellipse cx="300" cy="160" rx="100" ry="90"  fill="url(#glow2)"/>
-          <!-- Lines -->
-          <line x1="210" y1="60"  x2="100" y2="130" stroke="#461D7C" stroke-width="1.8" opacity="0.8"/>
-          <line x1="210" y1="60"  x2="165" y2="190" stroke="#461D7C" stroke-width="1.6" opacity="0.7"/>
-          <line x1="210" y1="60"  x2="310" y2="110" stroke="#FDD023" stroke-width="1.8" opacity="0.8"/>
-          <line x1="210" y1="60"  x2="340" y2="200" stroke="#FDD023" stroke-width="1.5" opacity="0.7"/>
-          <line x1="210" y1="60"  x2="260" y2="185" stroke="#FDD023" stroke-width="1.5" opacity="0.6"/>
-          <line x1="100" y1="130" x2="165" y2="190" stroke="#461D7C" stroke-width="1.6" opacity="0.7"/>
-          <line x1="100" y1="130" x2="60"  y2="230" stroke="#461D7C" stroke-width="1.4" opacity="0.6"/>
-          <line x1="165" y1="190" x2="80"  y2="290" stroke="#461D7C" stroke-width="1.4" opacity="0.55"/>
-          <line x1="60"  y1="230" x2="80"  y2="290" stroke="#461D7C" stroke-width="1.2" opacity="0.5"/>
-          <line x1="310" y1="110" x2="340" y2="200" stroke="#FDD023" stroke-width="1.6" opacity="0.7"/>
-          <line x1="340" y1="200" x2="370" y2="270" stroke="#FDD023" stroke-width="1.5" opacity="0.65"/>
-          <line x1="165" y1="190" x2="310" y2="110" stroke="#9B7CC4" stroke-width="1.2" stroke-dasharray="4,4" opacity="0.35"/>
-          <line x1="165" y1="190" x2="340" y2="200" stroke="#9B7CC4" stroke-width="1"   stroke-dasharray="4,4" opacity="0.28"/>
-          <!-- Hub -->
-          <circle cx="210" cy="60" r="20" fill="rgba(253,208,35,0.12)" stroke="#FDD023" stroke-width="1.5"/>
-          <circle cx="210" cy="60" r="13" fill="#FDD023"/>
-          <circle cx="210" cy="60" r="6"  fill="#1a0d30"/>
-          <!-- Left nodes -->
-          <circle cx="100" cy="130" r="11" fill="#1a0d30" stroke="#461D7C" stroke-width="2.2"/>
-          <circle cx="165" cy="190" r="9"  fill="#1a0d30" stroke="#461D7C" stroke-width="2"/>
-          <circle cx="60"  cy="230" r="7"  fill="#1a0d30" stroke="#461D7C" stroke-width="1.8"/>
-          <circle cx="80"  cy="290" r="6"  fill="#1a0d30" stroke="#461D7C" stroke-width="1.6"/>
-          <!-- Bridge -->
-          <circle cx="260" cy="185" r="8" fill="#ffffff"/>
-          <circle cx="260" cy="185" r="3.5" fill="#1a0d30"/>
-          <!-- Right nodes -->
-          <circle cx="310" cy="110" r="11" fill="#1a0d30" stroke="#FDD023" stroke-width="2.2"/>
-          <circle cx="340" cy="200" r="10" fill="#1a0d30" stroke="#FDD023" stroke-width="2"/>
-          <circle cx="370" cy="270" r="7.5" fill="#1a0d30" stroke="#FDD023" stroke-width="1.8"/>
-          <circle cx="210" cy="60" r="25" fill="none" stroke="#FDD023" stroke-width="0.8" stroke-dasharray="3,4" opacity="0.4"/>
-        </svg>
-      </div>
-
+<section id="about">
+  <div class="container rail">
+    <div class="eyebrow" style="padding-top:10px">Who you work with</div>
+    <div class="measure">
+      <h2 class="h2 mb-6">Enterprise experience, without the layers</h2>
+      <p class="body-lg mb-5">Solzark Systems is a Houston-based consulting firm founded by Saurabh Mankar. Fifteen years of work sits behind it: analytical data stores for regulated utilities, AI-powered search infrastructure for healthcare SaaS, multi-million-dollar programs, and distributed engineering teams across time zones.</p>
+      <p class="body-lg mb-5">There is no account manager between you and the work. The person scoping your engagement is the person building it, and the same person tells you when an approach carries a risk your team will need to plan for.</p>
+      <p class="pull">You don't hire us for reports. You hire us to get things done.</p>
+      <p class="mt-7"><a href="about/index.html" style="font-weight:500">More about the firm</a></p>
     </div>
   </div>
 </section>
 
-
-<!-- ═══════════════════════════════════════════════════════════
-     SERVICES
-     ═══════════════════════════════════════════════════════════ -->
-<section id="services" aria-label="Services">
+<section class="sunken" id="capabilities">
   <div class="container">
-    <div class="services-header">
-      <span class="section-label fade-up">What We Do</span>
-      <h2 class="fade-up stagger-1">Specialized where<br>precision matters.</h2>
-      <p class="services-sub fade-up stagger-2">Delivered hands-on across energy, utilities, healthcare, financial services, and SaaS. Every engagement is built to outlast our involvement.</p>
+    <div class="between mb-9">
+      <div>
+        <div class="eyebrow mb-4">Capabilities</div>
+        <h2 class="h2" style="max-width:24ch">Specialized where precision matters</h2>
+      </div>
+      <p style="max-width:40ch;color:var(--text-secondary)">Six practices, delivered hands-on. Every engagement is built to outlast our involvement.</p>
     </div>
+    <div class="row-3">
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">01</div>
+  <h3 class="h4 mb-3">Data engineering and architecture</h3>
+  <p class="mb-5">Analytical data stores, legacy ODS migrations, and pipelines that give a regulated business one source of truth. Built where data accuracy drives operational and financial decisions.</p>
+  <div class="tags"><span class="tag">SQL Server</span><span class="tag">Azure</span><span class="tag">ETL</span><span class="tag">Data modeling</span></div>
+</div>
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">02</div>
+  <h3 class="h4 mb-3">Security and access control</h3>
+  <p class="mb-5">RBAC schema design, row-level security, Active Directory integration and schema-per-group tenancy. Least privilege enforced without making the system unusable.</p>
+  <div class="tags"><span class="tag">RBAC</span><span class="tag">Row-level security</span><span class="tag">AD integration</span></div>
+</div>
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">03</div>
+  <h3 class="h4 mb-3">QA and test automation</h3>
+  <p class="mb-5">End-to-end frameworks on SerenityJS and the screenplay pattern, wired into Jenkins for daily runs, automated alerting and dashboards a stakeholder can read.</p>
+  <div class="tags"><span class="tag">SerenityJS</span><span class="tag">Cucumber</span><span class="tag">Jenkins</span><span class="tag">API testing</span></div>
+</div>
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">04</div>
+  <h3 class="h4 mb-3">Cloud and AI integration</h3>
+  <p class="mb-5">AWS-native architecture on Lambda, Bedrock and OpenSearch Serverless, with infrastructure as code and CI/CD from the first commit. AWS AI Practitioner certified.</p>
+  <div class="tags"><span class="tag">Lambda</span><span class="tag">Bedrock</span><span class="tag">OpenSearch</span><span class="tag">CloudFormation</span></div>
+</div>
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">05</div>
+  <h3 class="h4 mb-3">Systems modernization</h3>
+  <p class="mb-5">Legacy assessment, database migration, SQL optimization and process automation, sequenced so operations keep running while the platform underneath changes.</p>
+  <div class="tags"><span class="tag">Legacy migration</span><span class="tag">SQL optimization</span><span class="tag">Process automation</span></div>
+</div>
+      <div class="card">
+  <div class="mono mb-5" style="color:var(--brand-primary)">06</div>
+  <h3 class="h4 mb-3">Technology strategy</h3>
+  <p class="mb-5">Roadmap facilitation and weekly executive sessions, translating what leadership decided into what engineering builds — and back again when priorities move.</p>
+  <div class="tags"><span class="tag">Roadmapping</span><span class="tag">Stakeholder alignment</span><span class="tag">Agile / SAFe</span></div>
+</div>
+    </div>
+    <p class="mt-9"><a href="capabilities/index.html" style="font-weight:500">See each capability in detail</a></p>
+  </div>
+</section>
 
-    <div class="services-grid">
-
-      <!-- 1 -->
-      <div class="service-card fade-up stagger-1">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <rect x="6" y="6"  width="28" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
-          <rect x="6" y="17" width="28" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
-          <rect x="6" y="28" width="28" height="7" rx="2" stroke="currentColor" stroke-width="1.8"/>
-          <circle cx="11" cy="9.5"  r="1.5" fill="currentColor"/>
-          <circle cx="11" cy="20.5" r="1.5" fill="currentColor"/>
-          <circle cx="11" cy="31.5" r="1.5" fill="currentColor"/>
-        </svg>
-        <h3 class="svc-title">Data Engineering &amp; Architecture</h3>
-        <p class="svc-body">
-          We design and build analytical data stores, migrate legacy ODS systems to modern ADS platforms, and architect
-          pipelines that give regulated industries a single source of truth. Proven in high-stakes energy and utility environments
-          where data accuracy directly drives operational and financial decisions.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">SQL Server</span>
-          <span class="tag">Azure</span>
-          <span class="tag">ADS</span>
-          <span class="tag">ETL</span>
-          <span class="tag">Data Modeling</span>
+<section id="engagements">
+  <div class="container">
+    <div class="eyebrow mb-4">Engagements</div>
+    <div class="between mb-9">
+      <h2 class="h2" style="max-width:28ch">Who was stuck, and what changed</h2>
+      <a href="engagements/index.html" style="font-weight:500;white-space:nowrap">All engagements</a>
+    </div>
+    <div class="row-2" style="gap:var(--space-7)">
+      <article style="border:1px solid var(--border-subtle);border-radius:var(--radius-card);overflow:hidden">
+        <div class="rule rule--violet" style="width:100%;height:3px;margin:0"></div>
+        <div style="padding:var(--space-7)">
+          <div class="caption mb-5" style="font-weight:500">Regulated utility · Data platform</div>
+          <p class="h4 mb-5">Reporting broke every time the schema changed. Four business units were waiting on numbers they could not trust.</p>
+          <p class="mb-5">We migrated the legacy operational store to an analytical data store, built an abstraction layer between reporting and the source schema, and designed the row-level security model against existing Active Directory groups.</p>
+          <div style="display:flex;gap:var(--space-6);padding-top:var(--space-5);border-top:1px solid var(--border-subtle)">
+            <div><div class="stat__num">60%</div><div class="stat__label">Faster support resolution</div></div>
+            <div><div class="stat__num">2024</div><div class="stat__label">Innovation award</div></div>
+          </div>
+          <p class="caption mt-5" style="color:var(--gold-700)">Tradeoff we named up front: the abstraction layer adds a migration step your reporting team has to plan for.</p>
         </div>
-      </div>
-
-      <!-- 2 -->
-      <div class="service-card fade-up stagger-2">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M20 4L6 10v10c0 8.3 5.9 16 14 18 8.1-2 14-9.7 14-18V10L20 4z" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M15 20l3 3 7-7" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="svc-title">Security &amp; Access Control</h3>
-        <p class="svc-body">
-          From RBAC schema design to row-level security implementation, we build access frameworks that enforce
-          least-privilege without sacrificing usability. We integrate Active Directory security groups, design
-          schema-per-group multi-tenant models, and apply CIA principles — Confidentiality, Integrity, Availability —
-          from day one.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">RBAC</span>
-          <span class="tag">SQL Server RLS</span>
-          <span class="tag">AD Integration</span>
-          <span class="tag">CIA Triad</span>
+      </article>
+      <article style="border:1px solid var(--border-subtle);border-radius:var(--radius-card);overflow:hidden">
+        <div class="rule rule--gold" style="width:100%;height:3px;margin:0"></div>
+        <div style="padding:var(--space-7)">
+          <div class="caption mb-5" style="font-weight:500">Healthcare SaaS · QA and search</div>
+          <p class="h4 mb-5">The vendor's test framework was unsalvageable, and a release serving 500+ organizations was already on the calendar.</p>
+          <p class="mb-5">We rebuilt it on SerenityJS with the screenplay pattern, wired 400+ tests into Jenkins for nightly runs, and stood up AI-powered search on Bedrock and OpenSearch Serverless behind the same pipeline.</p>
+          <div style="display:flex;gap:var(--space-6);padding-top:var(--space-5);border-top:1px solid var(--border-subtle)">
+            <div><div class="stat__num">4 mo</div><div class="stat__label">Proof of concept to production</div></div>
+            <div><div class="stat__num">$1.8M</div><div class="stat__label">Contract extension secured</div></div>
+          </div>
+          <p class="caption mt-5" style="color:var(--gold-700)">Tradeoff we named up front: nightly runs need a stable test environment, which was a dependency on their platform team.</p>
         </div>
-      </div>
-
-      <!-- 3 -->
-      <div class="service-card fade-up stagger-3">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="14" r="7" stroke="currentColor" stroke-width="1.8"/>
-          <path d="M8 34c0-6.6 5.4-12 12-12s12 5.4 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M16 28l2.5 2.5 5-5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="svc-title">QA &amp; Test Automation</h3>
-        <p class="svc-body">
-          We architect end-to-end testing frameworks using SerenityJS and the screenplay pattern — integrated with
-          Jenkins CI/CD for daily execution, automated error alerting, and stakeholder-ready dashboards. Our QA POC
-          for a SaaS client was delivered in four months and directly secured a $1.2M contract extension.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">SerenityJS</span>
-          <span class="tag">Cucumber</span>
-          <span class="tag">Jenkins</span>
-          <span class="tag">API Testing</span>
-          <span class="tag">E2E</span>
-        </div>
-      </div>
-
-      <!-- 4 -->
-      <div class="service-card fade-up stagger-4">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M10 22c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <rect x="6" y="22" width="28" height="12" rx="3" stroke="currentColor" stroke-width="1.8"/>
-          <line x1="14" y1="28" x2="14" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="20" y1="28" x2="20" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="26" y1="28" x2="26" y2="28" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/>
-        </svg>
-        <h3 class="svc-title">Cloud Solutions &amp; AI Integration</h3>
-        <p class="svc-body">
-          AWS-native architecture including Lambda, Bedrock, and OpenSearch Serverless. We've designed and deployed
-          AI-powered search infrastructure for healthcare SaaS platforms serving 500+ organizations, with full
-          Infrastructure as Code via CloudFormation and automated CI/CD pipelines. AWS AI Practitioner certified.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">AWS Lambda</span>
-          <span class="tag">Amazon Bedrock</span>
-          <span class="tag">OpenSearch</span>
-          <span class="tag">CloudFormation</span>
-          <span class="tag">IaC</span>
-        </div>
-      </div>
-
-      <!-- 5 -->
-      <div class="service-card fade-up stagger-5">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="13" stroke="currentColor" stroke-width="1.8"/>
-          <line x1="20" y1="7"  x2="20" y2="20" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <line x1="20" y1="20" x2="28" y2="14" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <circle cx="20" cy="20" r="2.5" fill="currentColor"/>
-        </svg>
-        <h3 class="svc-title">Technology Strategy &amp; Leadership</h3>
-        <p class="svc-body">
-          We translate executive vision into engineering execution. From weekly CEO/CTO stakeholder sessions to
-          cross-functional roadmap facilitation, we bring the technical credibility and communication discipline
-          to keep programs moving when priorities shift. We've led teams of engineers across multiple concurrent
-          client engagements in demanding regulated industries.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">Roadmapping</span>
-          <span class="tag">Stakeholder Alignment</span>
-          <span class="tag">Agile / SAFe</span>
-          <span class="tag">Team Leadership</span>
-        </div>
-      </div>
-
-      <!-- 6 -->
-      <div class="service-card fade-up stagger-6">
-        <svg class="svc-icon" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <path d="M20 8a12 12 0 0 1 12 12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <path d="M20 32a12 12 0 0 1-12-12" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/>
-          <polyline points="30,4 32,8 28,8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-          <polyline points="10,36 8,32 12,32" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="svc-title">Systems Modernization</h3>
-        <p class="svc-body">
-          We assess legacy systems and deliver modernization roadmaps that reduce technical debt without disrupting
-          operations. Our work spans database migration and SQL optimization, cloud onboarding automation that cut
-          customer setup time by 90%, and process automation that reduced support resolution time by 60% — earning
-          a formal innovation award in a regulated utility environment.
-        </p>
-        <div class="svc-tags">
-          <span class="tag">Legacy Migration</span>
-          <span class="tag">SQL Optimization</span>
-          <span class="tag">Process Automation</span>
-          <span class="tag">Cloud Onboarding</span>
-        </div>
-      </div>
-
+      </article>
     </div>
   </div>
 </section>
 
-
-<!-- ═══════════════════════════════════════════════════════════
-     WHY SOLZARK
-     ═══════════════════════════════════════════════════════════ -->
-<section id="why" aria-label="Why Solzark">
-  <div class="container">
-    <div class="why-header">
-      <span class="section-label fade-up">Why Solzark</span>
-      <h2 class="fade-up stagger-1">Why clients choose Solzark</h2>
-      <div class="gold-line fade-up stagger-2"></div>
+<section class="band" id="approach">
+  <div class="grid-overlay" aria-hidden="true"></div>
+  <div class="container on-dark">
+    <div class="between" style="margin-bottom:var(--space-10)">
+      <div>
+        <div class="eyebrow eyebrow--gold mb-4">How we work</div>
+        <h2 class="h2">Four steps, stated before we start</h2>
+      </div>
+      <p class="lead" style="max-width:38ch">Structured enough to be reliable. Flexible enough to fit how your team already runs.</p>
     </div>
-    <div class="why-grid">
-
-      <div class="why-card fade-up stagger-1">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M16 3L3 9v9c0 6.6 5.5 13 13 14 7.5-1 13-7.4 13-14V9L16 3z" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M11 16l3.5 3.5L21 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="why-title">Enterprise-grade expertise</h3>
-        <p class="why-desc">15+ years of hands-on delivery across Fortune 500 energy, utility, healthcare, and financial services organizations. The complexity shows in how we scope, design, and ship.</p>
-      </div>
-
-      <div class="why-card fade-up stagger-2">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <circle cx="16" cy="10" r="5" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M6 28c0-5.5 4.5-10 10-10s10 4.5 10 10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-        </svg>
-        <h3 class="why-title">No bench, no layers</h3>
-        <p class="why-desc">You work directly with the person doing the work. No account managers, no hand-offs, no surprises buried in a statement of work.</p>
-      </div>
-
-      <div class="why-card fade-up stagger-3">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <polyline points="4,18 10,12 16,16 22,8 28,10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-          <circle cx="28" cy="10" r="2.5" fill="currentColor"/>
-        </svg>
-        <h3 class="why-title">Proven delivery</h3>
-        <p class="why-desc">$1.3M+ in contributed revenue, a 2024 Industry Innovation Award, and engagements that extend because clients trust the results — not because of a contract.</p>
-      </div>
-
-      <div class="why-card fade-up stagger-4">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <circle cx="16" cy="16" r="12" stroke="currentColor" stroke-width="1.6"/>
-          <path d="M16 8v8l5 3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="why-title">Agile without the buzzwords</h3>
-        <p class="why-desc">We adapt to your environment — SAFe, Scrum, or no framework at all. We've delivered in weekly sprint cycles reporting to C-suite stakeholders and in unstructured exploratory engagements alike.</p>
-      </div>
-
-      <div class="why-card fade-up stagger-5">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <rect x="4" y="8" width="24" height="16" rx="3" stroke="currentColor" stroke-width="1.6"/>
-          <line x1="4" y1="14" x2="28" y2="14" stroke="currentColor" stroke-width="1.4" opacity="0.5"/>
-          <circle cx="16" cy="20" r="2" fill="currentColor"/>
-        </svg>
-        <h3 class="why-title">Security-first mindset</h3>
-        <p class="why-desc">Every solution is designed with CIA principles — Confidentiality, Integrity, Availability — built in from day one. Not a checkbox. A design constraint.</p>
-      </div>
-
-      <div class="why-card fade-up stagger-6">
-        <svg class="why-icon" viewBox="0 0 32 32" fill="none" aria-hidden="true">
-          <path d="M16 4l3 6h6l-5 4 2 6-6-4-6 4 2-6-5-4h6z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
-        </svg>
-        <h3 class="why-title">Houston-based, enterprise-ready</h3>
-        <p class="why-desc">On-site in Texas when you need it. Remote-capable globally when you don't. We've managed distributed engineering teams across time zones and delivered without friction either way.</p>
-      </div>
-
+    <div class="row-4">
+      <div class="step"><div class="mono mb-4" style="color:var(--brand-accent)">01 / Discover</div><h3 class="h4 mb-3">Understand the real problem</h3><p class="lead" style="font-size:15px">We run discovery with the people who live with the problem, not only the people who filed the ticket.</p></div>
+      <div class="step"><div class="mono mb-4" style="color:var(--brand-accent)">02 / Design</div><h3 class="h4 mb-3">Agree before building</h3><p class="lead" style="font-size:15px">Decision records, data models and security schemas are reviewed with your team before code is written.</p></div>
+      <div class="step"><div class="mono mb-4" style="color:var(--brand-accent)">03 / Deliver</div><h3 class="h4 mb-3">Build and document</h3><p class="lead" style="font-size:15px">We report at every level, from engineer to executive, and document what your team needs to own it afterward.</p></div>
+      <div class="step"><div class="mono mb-4" style="color:var(--brand-accent)">04 / Optimize</div><h3 class="h4 mb-3">Review against the goal</h3><p class="lead" style="font-size:15px">We check outcomes against what you set out to do, then name the next highest-value piece of work.</p></div>
     </div>
   </div>
 </section>
 
-
-<!-- ═══════════════════════════════════════════════════════════
-     PROCESS
-     ═══════════════════════════════════════════════════════════ -->
-<section id="process" aria-label="Our Process">
-  <div class="container">
-    <div class="process-header">
-      <span class="section-label fade-up">Our Approach</span>
-      <h2 class="fade-up stagger-1">How we work</h2>
-      <div class="gold-line fade-up stagger-2"></div>
-      <p class="fade-up stagger-2" style="color:var(--muted);max-width:520px;">
-        Structured enough to be reliable. Flexible enough to fit your reality.
-      </p>
+<section class="sunken" id="contact">
+  <div class="container split" style="align-items:start">
+    <div>
+      <div class="eyebrow mb-4">Contact</div>
+      <h2 class="h2 mb-5" style="max-width:20ch">Send the constraint you are stuck on</h2>
+      <p class="lead mb-8" style="max-width:44ch">A founder reads every message. We reply within two business days, and we will tell you if this is not work we should take.</p>
+      <div class="stack gap-5">
+        <div><div class="caption mb-3">Email</div><a href="mailto:saurabh.mankar@solzarksystems.com" style="font-weight:500">saurabh.mankar@solzarksystems.com</a></div>
+        <div><div class="caption mb-3">Location</div><div style="font-weight:500;color:var(--text-primary)">Houston, Texas — on site in Texas, remote elsewhere</div></div>
+        <div><div class="caption mb-3">LinkedIn</div><a href="https://linkedin.com/in/saurabh-mankar" target="_blank" rel="noopener noreferrer" style="font-weight:500">linkedin.com/in/saurabh-mankar</a></div>
+      </div>
     </div>
-
-    <div class="process-timeline">
-      <div class="process-step fade-up stagger-1">
-        <div class="step-num">01</div>
-        <p class="step-label">Discover</p>
-        <h3 class="step-title">Understand the real problem</h3>
-        <p class="step-body">We start by understanding your environment, constraints, and goals — not just the ticket in front of us. We run structured discovery sessions with the stakeholders who actually live with the problem. Context shapes everything that follows.</p>
-      </div>
-      <div class="process-step fade-up stagger-2">
-        <div class="step-num">02</div>
-        <p class="step-label">Design</p>
-        <h3 class="step-title">Agree before building</h3>
-        <p class="step-body">Architecture and approach are agreed and documented before a line of code is written. Decision records, data models, and security schemas are produced and reviewed with your team. No surprises downstream.</p>
-      </div>
-      <div class="process-step fade-up stagger-3">
-        <div class="step-num">03</div>
-        <p class="step-label">Deliver</p>
-        <h3 class="step-title">Execute with precision</h3>
-        <p class="step-body">We execute with precision, communicate proactively with stakeholders at every level — from engineers to executives — and document everything your team needs to own the solution after we leave.</p>
-      </div>
-      <div class="process-step fade-up stagger-4">
-        <div class="step-num">04</div>
-        <p class="step-label">Optimize</p>
-        <h3 class="step-title">Maximize ongoing value</h3>
-        <p class="step-body">After delivery, we review outcomes against goals and identify the next highest-value opportunity. Engagements extend not because of lock-in, but because results earn trust.</p>
+    <div class="card">
+      <form id="contactForm" action="https://formspree.io/f/xgornnzn" method="POST">
+        <div class="row-2" style="gap:var(--space-5)">
+          <label class="field"><span>Name</span><input type="text" name="name" placeholder="Your name" required></label>
+          <label class="field"><span>Company</span><input type="text" name="company" placeholder="Your company"></label>
+        </div>
+        <label class="field"><span>Email</span><input type="email" name="email" placeholder="you@company.com" required></label>
+        <label class="field"><span>What are you working on</span><textarea name="message" rows="5" placeholder="The constraint, the deadline, and who it is blocking." required></textarea></label>
+        <button type="submit" class="btn btn--primary btn--lg btn--block">Send message</button>
+        <p class="caption mt-4" style="text-align:center">No intake forms, no gatekeepers.</p>
+      </form>
+      <div id="form-success">
+        <h3 class="h4 mb-3">Message received.</h3>
+        <p class="caption">Thanks for reaching out. Saurabh will reply within two business days.</p>
       </div>
     </div>
   </div>
 </section>
-
-
-<!-- ═══════════════════════════════════════════════════════════
-     CONTACT
-     ═══════════════════════════════════════════════════════════ -->
-<section id="contact" aria-label="Contact">
-  <div class="container">
-    <div class="contact-grid">
-
-      <div class="contact-left">
-        <span class="section-label fade-up">Get In Touch</span>
-        <h2 class="fade-up stagger-1">Let's talk</h2>
-        <div class="gold-line fade-up stagger-2"></div>
-        <p class="contact-sub fade-up stagger-2">Ready to start a conversation? Reach out directly — no intake forms, no gatekeepers.</p>
-
-        <div class="contact-item fade-up stagger-3">
-          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" stroke="currentColor" stroke-width="1.6"/>
-            <polyline points="22,6 12,13 2,6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
-          </svg>
-          <div>
-            <p class="contact-item-label">Email</p>
-            <a href="mailto:saurabh.mankar@solzarksystems.com" class="contact-item-val">saurabh.mankar@solzarksystems.com</a>
-            <p class="response-note">Typically responds within 1 business day</p>
-          </div>
-        </div>
-
-        <div class="contact-item fade-up stagger-4">
-          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" stroke="currentColor" stroke-width="1.6"/>
-            <circle cx="12" cy="10" r="3" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-          <div>
-            <p class="contact-item-label">Location</p>
-            <span class="contact-item-val">Houston, Texas</span>
-          </div>
-        </div>
-
-        <div class="contact-item fade-up stagger-5">
-          <svg class="contact-item-icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z" stroke="currentColor" stroke-width="1.6"/>
-            <rect x="2" y="9" width="4" height="12" stroke="currentColor" stroke-width="1.6" rx="0.5"/>
-            <circle cx="4" cy="4" r="2" stroke="currentColor" stroke-width="1.5"/>
-          </svg>
-          <div>
-            <p class="contact-item-label">LinkedIn</p>
-            <!-- TODO: Replace with your actual LinkedIn profile URL -->
-            <a href="https://linkedin.com/in/saurabh-mankar" target="_blank" rel="noopener noreferrer" class="contact-item-val">linkedin.com/in/saurabh-mankar</a>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up stagger-2">
-        <div class="contact-form">
-          <form id="contactForm" action="https://formspree.io/f/xgornnzn" method="POST">
-            <div class="form-row">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" placeholder="Your name" required />
-              </div>
-              <div class="form-group">
-                <label for="company">Company</label>
-                <input type="text" id="company" name="company" placeholder="Your company" />
-              </div>
-            </div>
-            <div class="form-group">
-              <label for="email">Email</label>
-              <input type="email" id="email" name="email" placeholder="your@email.com" required />
-            </div>
-            <div class="form-group">
-              <label for="message">Message</label>
-              <textarea id="message" name="message" placeholder="Tell us what you're working on…" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary form-submit">Send Message</button>
-          </form>
-
-          <div id="form-success">
-            <svg class="check-icon" viewBox="0 0 48 48" fill="none" aria-hidden="true">
-              <circle cx="24" cy="24" r="22" stroke="#FDD023" stroke-width="2"/>
-              <path d="M15 24l7 7 11-11" stroke="#FDD023" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
-            <h3>Message received.</h3>
-            <p>Thanks for reaching out. Saurabh will be in touch within 1 business day.</p>
-          </div>
-        </div>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-<!-- ═══════════════════════════════════════════════════════════
-     FOOTER
-     ═══════════════════════════════════════════════════════════ -->
-<footer>
-  <div class="container footer-inner">
-
-    <div class="footer-brand">
-      <img src="assets/logos/FullLogo_Transparent.svg"
-           alt="Solzark Systems LLC"
-           class="footer-logo"
-           width="200"
-           height="58" />
-      <p class="tagline">Partnering to build what's next.</p>
-    </div>
-
-    <nav class="footer-links" aria-label="Footer navigation">
-      <a href="#about">About</a>
-      <a href="#services">Services</a>
-      <a href="#process">Process</a>
+<footer class="footer">
+  <div class="container footer__inner">
+    <span class="caption" style="color:var(--text-inverse-muted)">© 2026 Solzark Systems LLC · Houston, Texas</span>
+    <nav>
+      <a href="about/index.html">About</a>
+      <a href="capabilities/index.html">Capabilities</a>
+      <a href="engagements/index.html">Engagements</a>
       <a href="#contact">Contact</a>
     </nav>
-
-    <div class="footer-copy">
-      <p>© 2026 Solzark Systems LLC.</p>
-      <p>All rights reserved.</p>
-    </div>
-
   </div>
 </footer>
-
-<!-- Script -->
 <script src="js/main.js"></script>
 </body>
 </html>
